@@ -19,15 +19,18 @@ $(document).ready(function(){
 		width: '850px'
 	});
 
-	var pmAuto = $('<div class = "pmAuto">');
+	var pmAuto = $('<div class = "pmAuto">');	
 	$('.clock').prepend(pmAuto);
+	$('.pmAuto').html('<p>PM</p> <b></b> <p>AUTO</p>');
+
 	$('.pmAuto').css({
 		border: 'solid',
-		color: 'peachpuff',
+		color: 'white',
 		fontFamily: 'Lucida Sans Typewriter',
 		fontSize: '1.25em',
 		height: '275px',
 		position: 'absolute',
+		textAlign: 'right',
 		top: '100px',
 		width: '150px'
 	});
