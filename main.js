@@ -19,17 +19,32 @@ $(document).ready(function(){
 		width: '850px'
 	});
 
+	var pmAuto = $('<div class = "pmAuto">');
+	$('.clock').prepend(pmAuto);
+	$('.pmAuto').css({
+		border: 'solid',
+		color: 'peachpuff',
+		fontFamily: 'Lucida Sans Typewriter',
+		fontSize: '1.25em',
+		height: '275px',
+		position: 'absolute',
+		top: '100px',
+		width: '150px'
+	});
+
 	var display = $('<div class = "display">');
 	$('.clock').append(display);
 	$('.display').css({
 		backgroundColor: 'firebrick',
-		borderRadius: '50px',
+		borderRadius: '25px',
 		height: '300px',
 		left: '150px',
 		position: 'absolute',
 		top: '75px',
 		width: '550px'
 	});
+
+
 
 	// var myVar = setInterval(function(){myTimer()}, 1000);
 	// 	function myTimer(){
